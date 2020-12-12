@@ -1058,7 +1058,7 @@
 		operating-points-v2 = <&generic_bw_opp_table>;
 	};
 
-	cpu_cpu_ddr_bwmon: qcom,cpu-cpu-ddr-bwmon@01008000 {
+	bwmon: qcom,cpu-bwmon@01008000 {
 		compatible = "qcom,bimc-bwmon4";
 		reg = <0x01008000 0x300>, <0x01001000 0x200>;
 		reg-names = "base", "global_base";
