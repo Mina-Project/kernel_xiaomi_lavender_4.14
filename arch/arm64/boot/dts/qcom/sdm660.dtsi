@@ -1049,7 +1049,7 @@
 		BW_OPP_ENTRY(1804, 4); /* 6881 MB/s */
 	};
 
-	cpu_cpu_ddr_bw: qcom,cpu-cpu-ddr-bw {
+	cpubw: qcom,cpubw {
 		compatible = "qcom,devbw";
 		governor = "bw_hwmon";
 		qcom,src-dst-ports =
@@ -1065,7 +1065,7 @@
 		interrupts = <GIC_SPI 183 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,mport = <0>;
 		qcom,hw-timer-hz = <19200000>;
-		qcom,target-dev = <&cpu_cpu_ddr_bw>;
+		qcom,target-dev = <&cpubw>;
 		qcom,count-unit = <0x10000>;
 	};
 
